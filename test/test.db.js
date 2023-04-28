@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const db = async () => {
     try {
-        await mongoose.connect('mongodb+srv://RiteshWanave:xTpY95XjnZkkSILX@technogames.kqosjaa.mongodb.net/TechnoTweet');
+        console.log(process.env.DB_URI);
+        await mongoose.connect(process.env.DB_URI)
         console.log('Connected to MongoDB');
     }
     catch (err) {
