@@ -21,6 +21,7 @@ db();
     Do not change .github/workflows/nodejs.yml file and test folder else your code will be disqualified
     Database is already connected to the app
     You can create user model and schema and use it in your code
+    You can check Leader Board to see your score LIVE: https://technogames-2021.herokuapp.com/leaderboard
 */
 /*
     **GITHUB**
