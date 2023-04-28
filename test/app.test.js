@@ -222,7 +222,7 @@ const updateScore = async () => {
         console.log(process.env.GITHUB_ACTOR);
         let user = await User.findOneAndUpdate({ username: process.env.GITHUB_ACTOR }, { score: correct });
         await user.save();
-        console.log('Score saved to database');
+        console.log('Score saved to database: ' + process.env.GITHUB_ACTOR);
     }
     catch (err) {
         console.log(err);
