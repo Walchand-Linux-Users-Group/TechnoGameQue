@@ -15,10 +15,24 @@ const db = async () => {
 }
 db();
 
-// use "npm run start" command to run your code
-// Do not change .github/workflows/nodejs.yml file and test folder else your code will be disqualified
-// Database is already connected to the app
-// You can create user model and schema and use it in your code
+/* 
+    **IMPORTANT**
+    use "npm run start" command to run your code
+    Do not change .github/workflows/nodejs.yml file and test folder else your code will be disqualified
+    Database is already connected to the app
+    You can create user model and schema and use it in your code
+*/
+/*
+    **GITHUB**
+    To push your code to github, follow these steps:
+
+    Paste your the following commands in your terminal:    
+    git add .
+    git commit -m "changes"
+    git push -u origin main
+
+    To check your code, go to github.com and check your repository
+*/
 
 // start writing your code here
 
