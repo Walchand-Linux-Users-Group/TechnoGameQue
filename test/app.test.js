@@ -8,7 +8,7 @@ var correct = 0;
 
 describe('Test API', () => {
 
-    describe('GET /start', () => {
+    describe('GET /tweet', () => {
         it('should return 200 status code', done => {
             chai.request('http://localhost:3000')
                 .get('/start')
