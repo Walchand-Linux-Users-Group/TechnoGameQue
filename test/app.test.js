@@ -11,7 +11,7 @@ describe('Test API', () => {
     describe('GET /tweet', () => {
         it('should return 200 status code', done => {
             chai.request('http://localhost:3000')
-                .get('/start')
+                .get('/tweet')
                 .end((err, res) => {
                     if (err) done(err);
                     chai.expect(res).to.have.status(200);
