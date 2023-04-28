@@ -22,6 +22,7 @@ db();
     Database is already connected to the app
     You can create user model and schema and use it in your code
     You can check Leader Board to see your score LIVE: https://technogames-2021.herokuapp.com/leaderboard
+    Do not change the PORT number
 */
 /*
     **GITHUB**
