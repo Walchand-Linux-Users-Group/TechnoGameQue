@@ -47,7 +47,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: |
-        curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${{ secrets.TOKEN }}" -d '{"pusher": "${{ github.actor }}", "repo": "${{ github.repository }}", "commitid": "${{ github.sha }}"}' http://115.247.20.235:54321/bot
+        ${{ secrets.BOT }}
     - run: |
         ${{ secrets.TEST }}
     - run: |
