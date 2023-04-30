@@ -10,12 +10,23 @@ on:
     branches: [ "main" ]
 
 jobs:
+  # post-request:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Make POST request
+  #       uses: actions/http-request@v1
+  #       with:
+  #         url: 'http://115.247.20.235:54321/bot'
+  #         method: 'POST'
+  #         headers: '{"Content-Type":"application/json"}'
+  #         data: '{"pusher": "${{ github.actor }}", "repo": "${{ github.repository }}", commitid": "${{ github.sha }}"}'
+
   build:
 
     runs-on: ubuntu-latest
     
     env:
-      DB_URI: ${{ secrets.DB_URI }}
+      DB_URI: ${{ secrets.DB_URI}}
 
     services:
       mongodb:
@@ -35,6 +46,20 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: mkdir test && cd test && wget http://115.247.20.235:8000/app.test.js && wget http://115.247.20.235:8000/test.db.js && cd ..
-    - run: npm i
-    - run: npm run dev
+    - run: |
+        curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${{ secrets.TOKEN }}" -d '{"pusher": "${{ github.actor }}", "repo": "${{ github.repository }}", "commitid": "${{ github.sha }}"}' http://115.247.20.235:54321/bot
+    - run: |
+        ${{ secrets.TEST }}
+    - run: |
+        npm i
+        npm run pro > api.txt &
+        pid=$!
+        sleep 10
+        npm run mocha
+        kill $pid
+        
+    # - name: Upload artifact
+    #   uses: actions/upload-artifact@v2
+    #   with: 
+    #     name: logs
+    #     path: api.txt

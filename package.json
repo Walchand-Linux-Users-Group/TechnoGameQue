@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "mocha -t 100000 --exit && sleep 2 && pkill -f 'node app.js'",
-    "dev": "concurrently \"node app.js\" \"npm run test\""
+    "pro": "node app.js",
+    "mocha": "mocha -t 100000 --exit"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +20,6 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "chai-http": "^4.3.0",
-    "concurrently": "^8.0.1",
     "mocha": "^10.2.0"
   }
 }
