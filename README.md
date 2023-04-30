@@ -22,7 +22,7 @@ We challenge you to build a system which is able to manage multiple user data as
 
 ### Technical details
 
-1. Your HTTP app need to expose APIs ([API contract](#api-contract)) on port 8080
+1. Your HTTP app need to expose APIs ([API contract](#api-contract)) on given specified port
 2. Application needs to persist data across restarts
 3. Do not touch the GitHub actions code. It is used to test your code automatically and score it. Any modifications will lead to immediate disqualification.
 4. Maximum time a single request can take is 10 seconds
