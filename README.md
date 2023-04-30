@@ -16,7 +16,7 @@ The judges will evaluate the submissions based on various criteria such as code 
 
 We challenge you to build a system which is able to manage multiple user data as specified in the ([API Contract](#api-contract)). Requests will be accepted over HTTP.
 
-![NodeMania Guide](https://github.com/Walchand-Linux-Users-Group/TechnoGameQue/blob/main/assets/NodeMania.png)
+![NodeMania Guide](https://res.cloudinary.com/ravikjha7/image/upload/v1682857745/NodeMania_ylpuk7.png)
 
 ---
 
@@ -74,7 +74,7 @@ Returns an user having specific id
 #### if (id does not exist)
 
 - Status : `404`
-- Content : `{error: 'User not found'}`
+- Content : `{message: 'User not found'}`
 
 #### PUT /user/:id
 
@@ -92,7 +92,7 @@ Updates the user having the particular id
 #### if (id does not exist)
 
 - Status : `404`
-- Content : `{error: 'User not found'}`
+- Content : `{message: 'User not found'}`
 
 #### DELETE /user/:id
 
@@ -106,7 +106,7 @@ Deletes an user having specific id
 #### if (id does not exist)
 
 - Status : `404`
-- Content : `{error: 'User not found'}`
+- Content : `{message: 'User not found'}`
 
 #### GET /user/all
 
