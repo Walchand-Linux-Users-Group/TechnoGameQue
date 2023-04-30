@@ -2,7 +2,7 @@
   <h1> <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png" width="17"/> NODEMANIA <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png" width="17"/></h1>
 </div>
 
-## What is NodeMania
+## What is NodeMania ?
 
 The backend competition(NodeMania) hosted by Walchand Linux Users' Group (WLUG) focuses on creating a functional backend using MongoDB, Express and NodeJS technologies. Participants will be required to create APIs that can handle requests from clients and perform CRUD (Create, Read, Update, Delete) operations on a database.
 
