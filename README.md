@@ -1,5 +1,5 @@
 <div>
-  <h1> <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png"/> NODEMANIA <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png"/></h1>
+  <h1> <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png" width="17"/> NODEMANIA <img src="https://res.cloudinary.com/ravikjha7/image/upload/v1682837647/Tweet_hzikla.png" width="17"/></h1>
 </div>
 
 ## What is NodeMania
