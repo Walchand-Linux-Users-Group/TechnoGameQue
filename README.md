@@ -71,6 +71,11 @@ Returns an user having specific id
 - Status : `200`
 - Content : `{id: string, fullname: string}`
 
+#### if (id does not exist)
+
+- Status : `404`
+- Content : `{error: 'User not found'}`
+
 #### PUT /user/:id
 
 Updates the user having the particular id
