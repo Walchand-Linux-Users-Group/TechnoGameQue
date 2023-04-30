@@ -122,7 +122,7 @@ Returns information of all the users in an array
 - use `npm run start` command to run your code
 - Do not change `.github/workflows/nodejs.yml` file else your code will be disqualified
 - You can create user model and schema and use it in your code
-- You can check Leader Board to see your score [LIVE](https://technogames-2021.herokuapp.com/leaderboard)
+- You can check Leader Board to see your score [LIVE](http://node-mania.wcewlug.org/)
 - Do not change the PORT number
 
 ### How to use GitHub
